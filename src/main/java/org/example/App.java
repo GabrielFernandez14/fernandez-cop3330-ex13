@@ -44,7 +44,7 @@ public class App
         double actualRate = rate / 100;
         double total = principal * (Math.pow((1 + (actualRate / compound)), (compound * years)));
 
-        // Print exit statement using string concatenation since I don't like interpolation, sue me
+        // Print exit statement using string concatenation since I interpolation is lame
         System.out.println("$" + principal + " invested at " + rate + "% for " +
                             years + " years compounded " + compound + " times per year is $"
                             + df.format(total) + ".");
